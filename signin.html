@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="singIn.css">
+  </head>
+  <body>
+    <img width="20%" height="20%"  src="./img/logo7.png" alt="Shopify.com"/>
+
+    <div id="signInBorder">
+      <p id="SignInTxt">
+        Sign in
+      </p>
+
+      <label>
+        <strong>Email (phone for mobile accounts)</strong>
+        <br>
+        <input id="email" type="email" name="email" value="">
+      </label>
+
+      <br>
+
+      <label>
+        <strong>Password</strong>
+        <span><a href="#" id="password">Forgot your password?</a></span>
+        <br>
+        <input type="password" name="password" id ="pas">
+      </label>
+
+      <div>
+        <button id="1">Sign in</button>
+      </div>
+
+      <div id="createAccount">
+        <h2><span>New Here in H & O?</span></h2>
+        <button id="newAccount" name="newAcct">Create your account</button>
+      </div>
+
+
+
+    </div>
+
+  <hr id="footer">
+
+  <div class="extra">
+    <p class="links"><a href="#" id="first">Conditions of Use</a>
+    <a href="#">Notice of Use</a>
+    <a href="#">Help</a></p>
+    <p class="links" id="special">
+      © 2020-2020, H&O.com, Inc. or its affiliates
+    </p>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $("#1").click(function(){
+   var email = $('#email').val()
+   var password = $('#pas').val()
+   console.log(email,password)
+   window.open("index.html","_self")
+  })
+</script>
+  </body>
+</html>
