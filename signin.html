@@ -47,18 +47,24 @@
     <a href="#">Notice of Use</a>
     <a href="#">Help</a></p>
     <p class="links" id="special">
-      © 2020-2020, H&O.com, Inc. or its affiliates
+      © 2020, H&O.com, Inc. or its affiliates
     </p>
   </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
 <script type="text/javascript">
   $("#1").click(function(){
    var email = $('#email').val()
    var password = $('#pas').val()
    console.log(email,password)
-   window.open("index.html","_self")
-  })
+   for (var i = 0; i < users.length; i++) {
+      if((users[i].email===email && users[i].pass=== password)||(users[i].user===email && users[i].pass=== password)){
+        sessionStorage.setItem("user",users[i].user);
+        window.open("index.html","_self")
+      }
+   }
+  });
 </script>
   </body>
 </html>
