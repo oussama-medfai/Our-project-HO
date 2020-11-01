@@ -43,7 +43,7 @@ var addArticl=function(){
 	var articles=[];
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var article=creatArticle()
-	article.addArticl('acessories','1','cars',' ','./img/acessories/cars/1.jpg','Rideaux pare-soleil avec Ventouse',9);
+	article.addArticl('w','1','cars',' ','./img/acessories/cars/1.jpg','Rideaux pare-soleil avec Ventouse',9);
 	articles.push(article);
 
 var article=creatArticle()
